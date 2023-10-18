@@ -60,7 +60,7 @@ for (let c = 0; c <= 10; c++) {
 //Fizbuzz Challenge
 
 for (let o = 1; o <= 100; o++) {
-    if (o % 15 === 0) {
+    if (o % 3 === 0 && o % 5 === 0) {
         console.log('FizzBuzz');
     } else if (o % 5 === 0) {
         console.log("Buzz");
