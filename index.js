@@ -31,4 +31,55 @@ for (let i = 0; i < names.length; i++) {
 }
 
 //break and continue statements
+//check for certain conditions and when its met, set a break.
 
+//Break
+
+for (let v = 0; v <= 20; v++) {
+
+    if (v === 15) {
+        console.log('Breaking...');
+        break;
+    }
+    console.log(v);
+}
+
+//continue
+
+for (let c = 0; c <= 10; c++) {
+
+    if (c === 4) {
+        continue;
+    }
+
+    console.log(c);
+}
+
+//While loop and do while loop
+
+//Fizbuzz Challenge
+
+for (let o = 1; o <= 100; o++) {
+    if (o % 15 === 0) {
+        console.log('FizzBuzz');
+    } else if (o % 5 === 0) {
+        console.log("Buzz");
+    } else if (o % 3 === 0) {
+        console.log('Fizz');
+    } else {
+        console.log(o);
+    }
+        
+}
+
+// for (let o = 1; o <= 100; o++) {
+//     if (o % 15 === 0) {
+//     	console.log("FizzBuzz");
+//     } else if (o % 3 === 0) {
+//     	console.log("Fizz");
+//     } else if (o % 5 === 0) {
+//     	console.log("Buzz");
+//     } else {
+//     	console.log(o);
+//     }
+// }
