@@ -71,15 +71,3 @@ for (let o = 1; o <= 100; o++) {
     }
         
 }
-
-// for (let o = 1; o <= 100; o++) {
-//     if (o % 15 === 0) {
-//     	console.log("FizzBuzz");
-//     } else if (o % 3 === 0) {
-//     	console.log("Fizz");
-//     } else if (o % 5 === 0) {
-//     	console.log("Buzz");
-//     } else {
-//     	console.log(o);
-//     }
-// }
