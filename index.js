@@ -197,3 +197,54 @@ socialObj.forEach((item) => console.log(item.name));
 
 //Array.filter
 
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const evenNumbers = numbers.filter((number) => {
+    return number % 2 === 0;
+})
+
+console.log(evenNumbers);
+
+const arrNames = ['jordan', 'michael', 'harry', 'daniel', 'curt', 'steven'];
+
+const sixDigits = arrNames.filter((word) => {
+    return word.length > 4;
+})
+
+console.log(sixDigits);
+
+
+const companies = [
+    {name: 'company one', category: 'finance', start: 1981, end: 2004},
+    {name: 'company two', category: 'retail', start: 1992, end: 2008},
+    {name: 'company three', category: 'auto', start: 1999, end: 2007},
+    {name: 'company four', category: 'retail', start: 1989, end: 2010},
+    {name: 'company five', category: 'technology', start: 2009, end: 2014},
+    {name: 'company six', category: 'finance', start: 198, end: 2010},
+    {name: 'company seven', category: 'auto', start: 1986, end: 2016},
+    {name: 'company eight', category: 'technology', start: 2011, end: 2016},
+    {name: 'company nine', category: 'retail', start: 1981, end: 1989},
+    
+];
+
+//get only retail companies
+
+const retailCompanies = companies.filter((ret) => {
+    return ret.category === 'retail';
+});
+
+console.log(retailCompanies);
+
+//get companies that started in or after 1980 and ended in or before 2005
+
+const dateCompanies = companies.filter((company) => {
+    return company.start >= 1980 && company.end <= 2005;
+})
+
+console.log(dateCompanies);
+
+//filter returns anything that is true on the right side of the array.
+
+//array.map
+
+//maps can return anything you need it to
